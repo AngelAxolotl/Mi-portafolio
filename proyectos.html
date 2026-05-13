@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos Realizados</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos/estilosProyecto.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+<!-- Para el NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+
+ <!-- LOGO / NOMBRE -->
+<img src="Recursos/Proyectos/Recursos/proyecto.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+<a class="navbar-brand fw-bold" href="index.html"> Mis proyectos en los que eh trabajado</a>
+
+ <!-- Boton de hamburguesa -->
+<button 
+class="navbar-toggler" 
+type="button" 
+data-bs-toggle="collapse" 
+ data-bs-target="#navbarContenido">
+<span class="navbar-toggler-icon"></span>
+</button> 
+<div class="collapse navbar-collapse" id="navbarContenido">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">
+            Inicio
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cursos.html">
+            Cursos
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="proyectos.html">
+            Proyectos
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+    
+
+<section id="proyectos" class="container py-5">
+<h2 class="titulo-proyectos text-center mb-5">
+Mis Proyectos
+</h2>
+<div class="col-lg-4 col-md-6">
+<div class="card card-proyecto h-100">
+ <!-- IMAGEN -->
+ <img  src="Recursos/Proyectos/Hackaton/Diseño.png" 
+ class="card-img-top img-proyecto" data-bs-toggle="modal" data-bs-target="#modalProyecto"
+  alt="Proyecto">
+<!-- TEXTO -->
+  <div class="card-body">
+<h5 class="card-title">
+ Página Web Deportiva
+ </h5>
+<p class="card-text">
+participé en un hackatón académico donde desarrollamos una landing page en equipo.
+Durante el proyecto trabajé principalmente en el desarrollo de estilos con CSS, enfocándome en la experiencia visual y 
+la coherencia del diseño. 
+Además la parte del carrito de compras que fue agregar 
+la suma de productos, el mensaje de producto eliminado y agregado.
+</p>
+ </div>
+ </div>
+</div>
+
+<div class="modal fade" id="modalProyecto" tabindex="-1">
+<div class="modal-dialog modal-xl modal-dialog-centered">
+<div class="modal-content bg-dark">
+<div class="modal-header border-0">
+<h5 class="modal-title text-white">
+Capturas del Proyecto
+</h5>
+<button type="button"class="btn-close btn-close-white"-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+
+  <!-- CARRUSEL -->
+<div id="carouselCapturas" class="carousel slide">
+<div class="carousel-inner">
+ 
+<div class="carousel-item active">
+<img  src="Recursos/Proyectos/Hackaton/Agregando.png" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="Recursos/Proyectos/Hackaton/Suma.png"class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="Recursos/Proyectos/Hackaton/Eliminando.png" class="d-block w-100" >
+</div>
+
+</div>
+<!-- BOTONES -->
+<button  class="carousel-control-prev" type="button" data-bs-target="#carouselCapturas" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#carouselCapturas" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<!-- Ahora pasamos al Footer -->
+<footer class="footer">
+<h3>Contáctame</h3>
+<div class="redes">
+<!-- LINKEDIN -->
+<a href="https://www.linkedin.com/in/angelbaca/" target="_blank">
+<i class="bi bi-linkedin"></i>
+</a>
+<!-- GITHUB -->
+<a href="https://github.com/AngelAxolotl/" target="_blank">
+<i class="bi bi-github"></i>
+</a>
+<!-- CORREO -->
+<a href="mailto:angelbaca.007@gmail.com?subject=Contacto%20desde%20Tu%20Portafolio&body=Hola,%20me%20gustaria%20contactarte.">
+<i class="bi bi-envelope-fill"></i>
+</a>
+</div>
+<p class="copy">© 2026 - Mi Portafolio Derechos reservados</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
