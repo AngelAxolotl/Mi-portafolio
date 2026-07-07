@@ -96,17 +96,19 @@ body{
 }
 
 .contenedor-tecnologias{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+flex-wrap:wrap;
+gap:50px;
 }
 
 .contenedor-tecnologias img{
-    width: 120px;
-    transition: 0.4s ease;
-    cursor: pointer;
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    transition:.4s ease;
+    cursor:pointer;
 }
 
 .contenedor-tecnologias img:hover{
@@ -132,7 +134,7 @@ body{
 }
 
 .card-curso:hover{
-    transform: translateY(-10px);
+    transform: scale(1.15) translateY(-10px);
     box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
 }
 
@@ -145,4 +147,70 @@ body{
     text-align: justify;
     font-size: 1.1rem;
     line-height: 1.8;
+}
+
+.skill{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.skill p{
+    margin-top:12px;
+    color:white;
+    font-weight:600;
+    font-size:1rem;
+}
+
+.skill:hover p{
+color:#00d4ff;
+transition:.3s;
+}
+
+.modal-body img{
+width:100%;
+height:auto;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:768px){
+
+    .navbar-brand{
+        font-size:.8rem;
+    }
+
+    .navbar img{
+        width:45px;
+        height:45px;
+    }
+
+    .titulo-tec,
+    .titulo-cursos{
+        font-size:2rem;
+    }
+
+    .contenedor-tecnologias{
+        gap:25px;
+    }
+
+    .contenedor-tecnologias img{
+        width:70px;
+        height:70px;
+    }
+
+    .card-img-top{
+        height:180px;
+    }
+
+    .texto-modal{
+        font-size:1rem;
+    }
+
+    .redes a{
+        font-size:1.5rem;
+    }
+
 }

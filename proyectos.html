@@ -25,7 +25,7 @@
 
  <!-- LOGO / NOMBRE -->
 <img src="Recursos/Proyectos/Recursos/proyecto.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
-<a class="navbar-brand fw-bold" href="index.html"> Mis proyectos en los que eh trabajado</a>
+<a class="navbar-brand fw-bold" href="index.html"> Mis proyectos en los que he trabajado</a>
 
  <!-- Boton de hamburguesa -->
 <button 
@@ -63,11 +63,14 @@ data-bs-toggle="collapse"
 <h2 class="titulo-proyectos text-center mb-5">
 Mis Proyectos
 </h2>
+
+<div class="row g-4 justify-content-center">
+
 <div class="col-lg-4 col-md-6">
 <div class="card card-proyecto h-100">
  <!-- IMAGEN -->
  <img  src="Recursos/Proyectos/Hackaton/Diseño.png" 
- class="card-img-top img-proyecto" data-bs-toggle="modal" data-bs-target="#modalProyecto"
+ class="card-img-top img-proyecto" data-bs-toggle="modal" data-bs-target="#modalHackaton"
   alt="Proyecto">
 <!-- TEXTO -->
   <div class="card-body">
@@ -75,7 +78,7 @@ Mis Proyectos
  Página Web Deportiva
  </h5>
 <p class="card-text">
-participé en un hackatón académico donde desarrollamos una landing page en equipo.
+Participé en un hackatón académico donde desarrollamos una landing page en equipo.
 Durante el proyecto trabajé principalmente en el desarrollo de estilos con CSS, enfocándome en la experiencia visual y 
 la coherencia del diseño. 
 Además la parte del carrito de compras que fue agregar 
@@ -85,19 +88,19 @@ la suma de productos, el mensaje de producto eliminado y agregado.
  </div>
 </div>
 
-<div class="modal fade" id="modalProyecto" tabindex="-1">
+<div class="modal fade" id="modalHackaton" tabindex="-1">
 <div class="modal-dialog modal-xl modal-dialog-centered">
 <div class="modal-content bg-dark">
 <div class="modal-header border-0">
 <h5 class="modal-title text-white">
 Capturas del Proyecto
 </h5>
-<button type="button"class="btn-close btn-close-white"-bs-dismiss="modal"></button>
+<button type="button"class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
 </div>
 <div class="modal-body">
 
   <!-- CARRUSEL -->
-<div id="carouselCapturas" class="carousel slide">
+<div id="carouselHackaton" class="carousel slide">
 <div class="carousel-inner">
  
 <div class="carousel-item active">
@@ -114,11 +117,11 @@ Capturas del Proyecto
 
 </div>
 <!-- BOTONES -->
-<button  class="carousel-control-prev" type="button" data-bs-target="#carouselCapturas" data-bs-slide="prev">
+<button  class="carousel-control-prev" type="button" data-bs-target="#carouselHackaton" data-bs-slide="prev">
 <span class="carousel-control-prev-icon"></span>
 </button>
 
-<button class="carousel-control-next" type="button" data-bs-target="#carouselCapturas" data-bs-slide="next">
+<button class="carousel-control-next" type="button" data-bs-target="#carouselHackaton" data-bs-slide="next">
 <span class="carousel-control-next-icon"></span>
 </button>
 </div>
@@ -126,8 +129,76 @@ Capturas del Proyecto
 </div>
 </div>
 </div>
-</section>
 
+
+<!-- Segundo proyecto que lleve acabo -->
+<div class="col-lg-4 col-md-6">
+<div class="card card-proyecto h-100">
+ <!-- IMAGEN -->
+ <img  src="Recursos/Proyectos/TintaBrava/Inicio.png" 
+class="card-img-top img-proyecto" data-bs-toggle="modal" data-bs-target="#modalTintaBrava"
+alt="Proyecto">
+<!-- TEXTO -->
+  <div class="card-body">
+<h5 class="card-title">
+ Página Web E-commerce TintaBrava
+ </h5>
+<p class="card-text">
+Proyecto Integrador terminado, se cumplió un objetivo dentro de Generation México
+Junto con mi equipo desarrollamos TintaBrava, una tienda E-Commerce de ropa urbana con estampados personalizados.
+Mi parte en el proyecto:
+Backend: Construí los endpoints REST para Categorías y SubCategorías con Spring Boot, 
+incluyendo validaciones para evitar duplicados y manejo de errores.
+</p>
+ </div>
+ </div>
+</div>
+
+<div class="modal fade" id="modalTintaBrava" tabindex="-1">
+<div class="modal-dialog modal-xl modal-dialog-centered">
+<div class="modal-content bg-dark">
+<div class="modal-header border-0">
+<h5 class="modal-title text-white">
+Capturas del Proyecto
+</h5>
+<button type="button"class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+
+  <!-- CARRUSEL -->
+<div id="carouselTintaBrava" class="carousel slide">
+<div class="carousel-inner">
+ 
+<div class="carousel-item active">
+<img  src="Recursos/Proyectos/TintaBrava/Inicio.png" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="Recursos/Proyectos/TintaBrava/Registro.png"class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="Recursos/Proyectos/TintaBrava/Inicio de la pagina.png" class="d-block w-100" >
+</div>
+
+</div>
+<!-- BOTONES -->
+<button  class="carousel-control-prev" type="button" data-bs-target="#carouselTintaBrava" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#carouselTintaBrava" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
 
 
 <!-- Ahora pasamos al Footer -->
@@ -150,8 +221,6 @@ Capturas del Proyecto
 <p class="copy">© 2026 - Mi Portafolio Derechos reservados</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

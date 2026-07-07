@@ -23,8 +23,7 @@
 
  <!-- LOGO / NOMBRE -->
 <img src="Recursos/Cursos/curso-por-internet.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
-<a class="navbar-brand fw-bold" href="index.html"> Mis cursos que he realizado y 
-  Tecnologías que he manejado</a>
+<a class="navbar-brand fw-bold" href="index.html">Cursos y Skills</a>
 
  <!-- Boton de hamburguesa -->
 <button 
@@ -63,16 +62,53 @@ data-bs-toggle="collapse"
 Skills/Tecnologías que he manejado
  </h2>
 <div class="contenedor-tecnologias">
-        <img src="Recursos/tecnologiasSkills/java.png" alt="Java">
-        <img src="Recursos/tecnologiasSkills/JS.png" alt="JavaScript">
-        <img src="Recursos/tecnologiasSkills/spring-boot-logo.png" alt="SpringBoot">
-        <img src="Recursos/tecnologiasSkills/python.png" alt="Python">
-        <img src="Recursos/tecnologiasSkills/git.png" alt="Git">
-        <img src="Recursos/tecnologiasSkills/github.png" alt="GitHub">
-        <img src="Recursos/tecnologiasSkills/api.png" alt="Apis">
-        <img src="Recursos/tecnologiasSkills/html5.png" alt="HTML5">
-        <img src="Recursos/tecnologiasSkills/ccs.png" alt="CCS3">
-    </div>
+
+<div class="skill">   
+<img src="Recursos/tecnologiasSkills/java.png" alt="Java">
+<p>Java</p>
+</div>   
+
+<div class="skill">        
+<img src="Recursos/tecnologiasSkills/JS.png" alt="JavaScript">
+<p>JavaScript</p>
+</div>
+
+<div class="skill">
+<img src="Recursos/tecnologiasSkills/spring-boot-logo.png" alt="SpringBoot">
+<p>SpringBoost</p>
+</div>
+
+<div class="skill">
+<img src="Recursos/tecnologiasSkills/python.png" alt="Python">
+<p>Python</p>
+</div>
+
+<div class="skill">
+<img src="Recursos/tecnologiasSkills/git.png" alt="Git">
+<p>Git</p>
+</div>
+
+<div class="skill">
+<img src="Recursos/tecnologiasSkills/github.png" alt="GitHub">
+<p>GitHub</p>
+</div>
+
+<div class="skill">   
+<img src="Recursos/tecnologiasSkills/api.png" alt="Apis">
+<p>Api</p>
+</div>     
+        
+<div class="skill">
+<img src="Recursos/tecnologiasSkills/html5.png" alt="HTML5">
+<p>HTML5</p>
+</div>
+
+<div class="skill">       
+<img src="Recursos/tecnologiasSkills/ccs.png" alt="CCS3">
+<p>CCS3</p>
+</div> 
+
+</div>
 </section>
 
 <!-- Parte de las cards y modales -->
@@ -83,7 +119,7 @@ Skills/Tecnologías que he manejado
 <div class="row g-4">
 
 <!-- CCURSOO POO -->
-<div class="col-md-4">
+<div class="col-12 col-sm-6 col-lg-3">
 <div class="card card-curso">
 <img src="Recursos/Cursos/java Icono.png" class="card-img-top" alt="Java">
 <div class="card-body text-center">
@@ -98,7 +134,7 @@ Ver Certificado
 </div>
 
 <!-- CCURSOO BACK-END -->
-<div class="col-md-4">
+<div class="col-12 col-sm-6 col-lg-3">
 <div class="card card-curso">
 <img src="Recursos/Cursos/Logo Back.png" class="card-img-top" alt="Back">
 <div class="card-body text-center">
@@ -113,7 +149,7 @@ Ver Certificado
 </div>
 
 <!-- CCURSOO Desarrollador de aplicaciones en la nube-->
-<div class="col-md-4">
+<div class="col-12 col-sm-6 col-lg-3">
 <div class="card card-curso">
 <img src="Recursos/Cursos/Icono API.png" class="card-img-top" alt="APIS">
 <div class="card-body text-center">
@@ -126,7 +162,24 @@ Ver Certificado
 </div>
 </div>
 </div>
+
+<!-- CCURSOO Accenture -->
+<div class="col-12 col-sm-6 col-lg-3">
+<div class="card card-curso">
+<img src="Recursos/Cursos/SQL-Icono.png" class="card-img-top" alt="SQL">
+<div class="card-body text-center">
+ <h5 class="card-title">
+  Curso Introducción a SQL
+  </h5>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSQL">
+Ver Certificado
+</button>
+</div>
+</div>
+</div>
+
 </section>
+
 
 <!-- Parte del MODAL en el certificado en POO -->
 <div class="modal fade" id="modalJava" tabindex="-1">
@@ -155,7 +208,7 @@ Programación Orientada a Objetos
 <div class="modal-content">
 <div class="modal-header">
 <h5 class="modal-title">
-Curos de Back-End
+Curso de Back-End
 </h5>
 <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
 </div>
@@ -176,14 +229,14 @@ el curso como desarrollador Back-End ya que con eso me fortalece mis habilidades
 <div class="modal-content">
 <div class="modal-header">
 <h5 class="modal-title">
-Curos de Desarrollador de aplicaciones en la nube
+Curso de Desarrollador de aplicaciones en la nube
 </h5>
 <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
 </div>
 <div class="modal-body text-center">
 <img src="Recursos/Cursos/Certificado Desarrollador de aplicaciones en la nube.png" class="img-fluid mb-4">
 <p class="texto-modal">
-  Por parte de “capacítate para el empleo” proporcionado por el Tecnológico eh concluido satisfactoriamente 
+  Por parte de “capacítate para el empleo” proporcionado por el Tecnológico he concluido satisfactoriamente 
 el curso como Desarrollador de aplicaciones en la nube donde obtendré 
 las herramientas básicas que te permitirán desarrollar aplicaciones para desplegarlas en la nube
 </p>
@@ -192,6 +245,27 @@ las herramientas básicas que te permitirán desarrollar aplicaciones para despl
 </div>
 </div>
 
+<!-- Parte del modal curso Accenture SQL -->
+<div class="modal fade" id="modalSQL" tabindex="-1">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">
+Curso de introducción a SQL
+</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
+</div>
+<div class="modal-body text-center">
+<img src="Recursos/Cursos/Certificado - Introducción a SQL.png" class="img-fluid mb-4">
+<p class="texto-modal">
+  Por parte de “Accenture” he concluido satisfactoriamente 
+el curso como Introducción a SQL donde obtendré 
+las herramientas básicas y además de reforzar el conocimiento sobre el manejo de las bases de datos.
+</p>
+</div>
+</div>
+</div>
+</div>
 
 
 
@@ -215,8 +289,6 @@ las herramientas básicas que te permitirán desarrollar aplicaciones para despl
 <p class="copy">© 2026 - Mi Portafolio Derechos reservados</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
